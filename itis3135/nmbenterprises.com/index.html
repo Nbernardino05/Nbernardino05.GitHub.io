@@ -5,12 +5,70 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nina Matsukura Bernardino || Firm Page</title>
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>  <!--Accumulus-->
-        <!--Color Scheme: https://coolors.co/8ab0ab-3e505b-26413c-1a1d1a-03120e-->
-        <!--background-color: #3e505b;-->
-        <!--background-color: #8ab0ab;-->
+        <!--Color Scheme: https://coolors.co/8ab0ab-3e505b-26413c-1a1d1a-03120e, https://coolors.co/dcdcdd-c5c3c6-46494c-4c5c68-1985a1-->
         <style>
+            html{
+                background-color: #DCDCDD;
+                font-family: copperplate, sans-serif;
+            }
+            header{
+                background-color: #4C5C68;
+                width:100%;  
+                box-shadow: 0 5px 5px #1A1D1A50;
+            }
+            body{
+                margin: 0;
+            }
+            main{
+                padding: 0 12px;
+            }
+            .intro_figure{
+                display: flex;
+
+            }
+            h2{
+                text-align: center;
+                padding: 0px 0;
+            }
+
             ul{
                 /*unordered list with a non-standard bullet style*/
+                list-style: square;
+                text-align: left;
+            }   
+            h1{
+                font-size: 60px;
+                margin:0;
+                margin-left: 12px;
+                
+            }
+            h3{
+                margin-top: 0;
+            }
+            footer{
+                position:fixed;
+                left:0;
+                bottom:0;
+                width:100%;
+                background-color: #4C5C68;
+                text-align: center;
+            }
+            img{
+                width:50px;
+                object-fit: contain;
+            }
+            .intro{
+                width: 50%;
+            }
+            #intro_paragraph{
+                text-align: center;
+            }
+            .promise{
+                background-color: #8AB0AB;
+                margin: 0px;
+                padding:12px;
+                border-radius: 6px;
+                box-shadow: 0 5px 5px #1A1D1A50;
             }
             
         </style>
@@ -18,32 +76,35 @@
     <body>
         <header>
             <!--width=1.38, height=1, res=72-->
-            <h1><img src="../images/robologo.png" alt="robo logo">NMB Enterprises</h1>
+            <h1><img src="../images/robologo.png" alt="robo logo"/>NMB Enterprises</h1>
             
         </header>
         <main>
             <h2>NMB Enterprises Service's</h2>
             <!--company description-->
-            <p>NMB Enterprises is a creative web design firm specializing in sleek, user-friendly websites that elevate brands. 
+            <figure class="intro_figure">
+                <p class="intro" id="intro_paragraph">NMB Enterprises is a creative web design firm specializing in sleek, user-friendly websites that elevate brands. 
                 Our team blends innovative design with seamless functionality to craft digital experiences that captivate.</p>
             
-                <!--5-10 amazing things about your company (unordered list with a non-standard bullet style)-->
-            <ul>
-                <li>Lightning-fast performance for smooth browsing</li>
-                <li>Scalable web solutions that grow with your business</li>
-                <li>Custom branding elements to strengthen your online presence</li>
-                <li>Interactive design features that elevate user engagement</li>
-                <li>Robust security measures to protect your website and user data</li>
-            </ul>
-
+            <!--5-10 amazing things about your company (unordered list with a non-standard bullet style)-->
+                <ul class="intro">
+                    <li>Lightning-fast performance for smooth browsing</li>
+                    <li>Scalable web solutions that grow with your business</li>
+                    <li>Custom branding elements to strengthen your online presence</li>
+                    <li>Interactive design features that elevate user engagement</li>
+                    <li>Robust security measures to protect your website and user data</li>
+                </ul>
+            </figure>
             <!--paragraph outlining what you'd like to do for a client-->
-            <h3>Our Company Promise</h3>
+            <figure class="promise"> 
+            <h3 >Our Company Promise</h3>
             <p>We are dedicated to bringing your vision to life with a custom, high-performing website that reflects your brand’s identity and goals. 
                 From sleek, responsive designs to seamless user experiences, we craft digital solutions that engage visitors and drive results. 
                 Whether you need a brand-new site, a redesign, or advanced functionality like e-commerce or interactive features, 
                 our team ensures every detail is optimized for performance, accessibility, and SEO.</p>
             <!--contact info-->
-            <h3>Contact Us to Get Started!</h3>
+            </figure>
+            <h4>Contact Us to Get Started!</h4>
             <ul>
                 <li>Phone: (123) 456-7890</li>
                 <li>Email: nmbEnterprises@gmail.com</li>
