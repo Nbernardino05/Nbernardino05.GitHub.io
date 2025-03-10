@@ -1,0 +1,34 @@
+html{
+    background-color: white;
+    color:black;
+}
+ul{
+    text-align: center;
+    margin:100px;
+    font-family: Times;
+
+}
+h2{
+    /* border with 4 different style sides */
+    border-left: 3px dashed rgb(226, 251, 187);
+    border-right: 10px dotted rgb(226, 251, 187); /*for poor contrast*/
+    border-bottom: 15px double orange;
+    border-top: 20px solid orange; /*really big border*/
+    text-align: center;
+    margin:50px;
+    padding: 50px;
+}
+h1{
+    text-decoration: underline;
+    font-family: papyrus;
+
+}
+p{
+    font-family:'Comic Sans MS';
+    background-color: darksalmon;
+    margin:0;
+}
+img{
+    width:400px;
+    height:400px;
+}
