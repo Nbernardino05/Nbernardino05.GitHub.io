@@ -5,18 +5,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hobby Site</title> 
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>  <!--Accumulus-->
+        <!--Color scheme: #4E5340(olive green), #697268(light olive green), #95A3A4(light green/grey), #B7D1DA(light blue/green), #D5DECF(alabaster)-->
         <style>
-            body{
-                background-color: #D5DECF;
-                font-family: Poppins;
-            }
             @font-face{
                 font-family: 'delius';
                 src: url("./fonts/delius/delius.ttf");
             }
+            body{
+                background-color: #D5DECF;
+                font-family: 'delius';
+                margin:0;
+            }         
+            header{
+                background-color: #697268;
+                width:100%;           
+                
+            }
             h1{
                 font-family: 'delius';
                 text-align: center;
+                font-size: 40px;
+                margin:0;
+            } 
+            h2{
+                padding-left:15px;
+                margin:0;
+            }
+            p{
+                margin-bottom:10px;
+            }
+            main{
+                padding:20px;
+            }  
+            .in_section_heading{
+                font-size: 15px;
+                font-weight: 900;
             }
             figure{
                 text-align: center;
@@ -32,16 +55,27 @@
                 text-align: center;
                 background-color: #4E5340;
             }
+            ul{
+                margin-top:0;
+            }
+
         </style>
     </head>
     <body>
         <header>
-
-        </header>
-        <main>
             <h1>House Plants</h1>
+        </header>
+        <main>      
             <!--What/Home-->
             <section>
+                <p>
+                    Caring for houseplants is a rewarding hobby that brings a touch of nature indoors while offering numerous benefits. Whether cultivating 
+                    lush tropical foliage, delicate succulents, or flowering plants, houseplant enthusiasts enjoy the satisfaction of nurturing living things. 
+                    This hobby not only enhances home aesthetics but also improves air quality and promotes relaxation. Many plant lovers find joy in learning about 
+                    different species, experimenting with lighting and watering techniques, and troubleshooting plant care challenges. With the right balance of 
+                    attention and patience, houseplants can thrive, making them a fulfilling and therapeutic addition to any space.
+                </p>
+                
 
             </section>
 
@@ -49,43 +83,135 @@
             <section>
                 <h2>Who We Are</h2> 
                 <!--minimum 3 'things'-->
+                <p>talk about </p>
                 <figure>
                     <img src="./images/twinkle_toes.jpeg" alt="Tom">
-                    <figcaption><em>Twinkle Toes</em></figcaption>
+                    <figcaption><em><strong>Tom</strong> the Pulmonaria 'Twinkle Toes'</em></figcaption>
                 </figure>
                 <figure>
                     <img src="./images/cactus_pothos_pilea.jpeg" alt = "cactus, pothos, pilea">
-                    <figcaption><em>(from left to right) Cactus, Pothos, Pilea</em></figcaption>
+                    <figcaption><em>(from left to right) <strong>Carl</strong> the Cactus, <strong>Pat</strong> the Pothos, <strong>Pablo</strong> the Pilea</em></figcaption>
                 </figure>
                 <figure>
                     <img src="./images/pothos.jpeg" alt="pothos">
-                    <figcaption><em>Pothos</em></figcaption>
+                    <figcaption><em><strong>Patty</strong> the other Pothos</em></figcaption>
                 </figure>
                 <figure>
                     <img src="./images/dumb_cane.jpeg" alt="dumb cane">
-                    <figcaption><em>Dumb Cane</em></figcaption>
+                    <figcaption><em><strong>Dirk</strong></Dirk> the Dumb Cane</em></figcaption>
                 </figure>         
             </section>
 
-            <!--When/Seasons-->
+            <!--DONE When/Seasons-->
             <section>
-                <h2>Seasons</h2>
+                <h2>Seasons of Plant Care</h2>
+                <table>
+                    <tr>
+                        <td class="table_heading">Spring/Summer</td>
+                        <td class="table_heading">Fall</td>
+                        <td class="table_heading">Winter</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul> <!--Spring/Summer-->
+                                <li>Grow the most</li>
+                                <li>Best season to repot your plants</li>
+                                <li>Require more watering</li>
+                                <li>Recommended seasons for fertilizing</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul> <!--Fall-->
+                                <li>Reduced watering</li>
+                                <li>Adjust to lower/less light</li>
+                                <li>Pause the fertilizer</li>
+                                <li>Maintain/increase indor humidity</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul> <!--Winter-->
+                                <li>Some plants enter dormancy</li>
+                                <li>Move plants closer to their light source</li>  
+                                <li>Avoid cold windows or drafts</li>
+                                <li>Prune before growing season</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <p>Understanding these seasonal changes helps keep plants thriving year-round.</p>
+                <p class="in_section_heading">Year-Round Maintenance/Tips</p>
+                <ul>
+                    <li>Inspect leaves and soil for pests and diseases</li>
+                    <li>Reasearch your plants- learn how much light they need or how often they should be watered</li>
+                    <li>Dust plant leaves regularly to ensure they can absorb light properly</li>
+                    <li>Rotate pots every few weeks to promote even growth all around</li>
+                </ul>
+
             </section>
 
             <!--Where/Best locations-->
             <section>
                 <h2>Favorite Spots</h2>
+                <p>Some plants thrive in bright, direct light, while others prefer shady corners. Finding the right spot is essential for growth.</p>
+                <ul>
+                    <li>Windowsill</li>
+                    <li>Tops of cabinets</li>
+                    <li>Coffee tables</li>
+                </ul>
+                <p>My plants favorite spots</p>
                 <p>Windowsill</p>
                 <p>Tops of Cabinets</p>
             </section>
 
-            <!--How-->
-            <section></section>
-        
-            <!--Why-->
+            <!--DONE How-->
             <section>
+                <h2>How to Care for Houseplants</h2>
                 <p>
-                    
+                    Taking care of houseplants involves more than just watering. Each plant has specific needs related to soil, humidity, and light. 
+                    Understanding these factors will help you create the best environment for your plants to thrive.
+                </p>
+                <p>Basic Houseplant Care Steps:</p>
+                <ul>
+                    <li><strong>Watering:</strong> Water when the soil feels dry, but avoid overwatering</li>
+                    <li><strong>Light:</strong> Match the plant’s light requirements with the available indoor lighting</li>
+                    <li><strong>Soil:</strong> Use well-draining soil appropriate for each plant type</li>
+                    <li><strong>Humidity:</strong> Some plants need extra humidity; misting or using a humidifier can help</li>
+                    <li><strong>Pruning:</strong> Remove dead or yellowing leaves to keep plants healthy</li>
+
+                </ul>
+
+                <p>
+                    The composition of a plant's soil is also particularly important, as some species require well-draining soil while others need moisture
+                    retention. Choosing the right soil mix can prevent root rot and promote healthy growth.
+                </p>
+
+            </section>
+        
+            <!--DONE why-->
+            <section>
+                <h2>Why House Plants?</h2>
+                <p>
+                    Houseplants are a fantastic addition to any home or workspace, offering both aesthetic and practical benefits. 
+                    Their vibrant greenery enhances interior décor, creating a more inviting and calming atmosphere. Beyond their beauty, 
+                    houseplants contribute to better air quality by filtering toxins and increasing humidity, which can improve respiratory health. 
+                    Studies have also shown that caring for plants reduces stress, boosts mood, and enhances focus, making them ideal for busy 
+                    individuals seeking a natural way to unwind.
+                </p>
+                <p>Benefits of Houseplants:</p>
+                <ul>
+                    <li>Reduce stress levels (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4419447/">source</a>)</li>
+                    <li>Improve indoor air quality (<a href="https://www.birmingham.ac.uk/news/2022/common-houseplants-can-improve-air-quality-indoors">source</a>)</li>
+                    <li>Increase productivity (<a href="https://meridian.allenpress.com/jeh/article/14/2/97/79431/Interior-Plants-May-Improve-Worker-Productivity">source</a>)</li>
+                    <li>Accelerated healing (<a href="https://time.com/6258638/indoor-plants-health-benefits/">source</a>)</li>
+                    <li>Sharpen attention (<a href="https://time.com/6258638/indoor-plants-health-benefits/">source</a>)</li>
+                </ul>
+                <p>
+                    Caring for houseplants is a fulfilling hobby because it offers a perfect balance of relaxation, creativity, and personal growth. 
+                    Watching a plant thrive under your care provides a deep sense of accomplishment, reinforcing patience and attentiveness.
+                    Each plant has unique needs, encouraging hobbyists to continuously learn about watering schedules, lighting conditions, and soil 
+                    types, making the experience both engaging and educational. Additionally, tending to plants can be a mindful, stress-relieving 
+                    activity that fosters a connection with nature, even in urban settings. The process of propagating, repotting, and arranging 
+                    plants allows for self-expression and creativity, making houseplant care a rewarding and ever-evolving pursuit.
                 </p>
             </section>
 
