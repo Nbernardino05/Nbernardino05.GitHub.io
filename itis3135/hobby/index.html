@@ -55,6 +55,25 @@
             ul{
                 margin-top:0;
             }
+            .where_table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 10px;
+            }
+
+            .where_table th, .where_table td {
+                border: 2px solid black;
+                padding: 10px;
+                text-align: left;
+            }
+
+            .where_table th {
+                background-color: #697268; /* Light Olive Green */
+                color: white;
+                font-weight: bold;
+                text-align: center;
+}
+            
 
         </style>
     </head>
@@ -65,6 +84,7 @@
         <main>      
             <!--DONE What/Home-->
             <section>
+                <h2>Home</h2>
                 <p>
                     Houseplant care is the hobby of growing and maintaining plants indoors, whether for decoration, relaxation, or the challenge of 
                     nurturing living things. This hobby involves selecting plants suited to indoor environments, understanding their needs—such as 
@@ -163,18 +183,38 @@
 
             </section>
 
-            <!--Where/Best locations-->
+            <!--DONE Where/Best locations-->
             <section>
-                <h2>Favorite Spots</h2>
+                <h2>Best Locations for Houseplants</h2>
                 <p>Some plants thrive in bright, direct light, while others prefer shady corners. Finding the right spot is essential for growth.</p>
+                <table class="where_table">
+                    <tr>
+                        <th>Light Condition</th>
+                        <th>Best Plants</th>
+                    </tr>
+                    <tr>
+                        <td>Bright, Direct Sunlight</td>
+                        <td>Cactus, Succulents, Jade Plant</td>
+                    </tr>
+                    <tr>
+                        <td>Indirect Light</td>
+                        <td>Pothos, Peace Lily, Rubber Plant</td>
+                    </tr>
+                    <tr>
+                        <td>Low Light</td>
+                        <td>Snake Plant, ZZ Plant, Cast Iron Plant</td>
+                    </tr>
+                </table>
+                <figure>
+                    <img src="./images/window_plant.png" alt="plants on shelf">
+                    <figcaption><em><q>Nature is Not a Place to Visit. It is Home.</q> - Gary Snyder</em></figcaption>
+                </figure>
+                <h3>My plants' favorite spots:</h3>
                 <ul>
                     <li>Windowsill</li>
                     <li>Tops of cabinets</li>
-                    <li>Coffee tables</li>
+                    <li>Coffee table</li>
                 </ul>
-                <p>My plants favorite spots</p>
-                <p>Windowsill</p>
-                <p>Tops of Cabinets</p>
             </section>
 
             <!--DONE How-->
@@ -193,7 +233,10 @@
                     <li><strong>Pruning:</strong> Remove dead or yellowing leaves to keep plants healthy</li>
 
                 </ul>
-
+                <figure>
+                    <img src="./images/soil.png" alt="potting a plant">
+                    <figcaption><em><q>To forget how to dig the earth and to tend the soil is to forget ourselves</q> - Mahatma Gandhi</em></figcaption>
+                </figure>
                 <p>
                     The composition of a plant's soil is also particularly important, as some species require well-draining soil while others need moisture
                     retention. Choosing the right soil mix can prevent root rot and promote healthy growth.
@@ -227,10 +270,16 @@
                     activity that fosters a connection with nature, even in urban settings. The process of propagating, repotting, and arranging 
                     plants allows for self-expression and creativity, making houseplant care a rewarding and ever-evolving pursuit.
                 </p>
+                <figure>
+                    <img src="./images/watering_plant.png" alt="woman watering plant">
+                    <figcaption><em><q>I like gardening—it's a place where I find myself when I need to lose myself.</q> - Alice Sebold</em></figcaption>
+                </figure>
             </section>
 
             <!--AI Prompts (must clarify if didn't use any)-->
-            <section></section>
+            <section>
+                <p>I mostly used AI to produce the filler content of my website. </p>
+            </section>
         </main>
         <footer>
             <p>
