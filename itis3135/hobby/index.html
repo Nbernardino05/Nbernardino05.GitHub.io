@@ -13,7 +13,8 @@
             }
             body{
                 background-color: #D5DECF;
-                font-family: 'delius';
+                font-family: 'delius', Arial, sans-serif;
+                color:#20231B;
                 margin:0;
             }         
             header{
@@ -65,6 +66,7 @@
                 border: 2px solid black;
                 padding: 10px;
                 text-align: left;
+                border-spacing: 0;
             }
 
             .where_table th {
@@ -72,18 +74,55 @@
                 color: white;
                 font-weight: bold;
                 text-align: center;
-}
+            }
+            nav {
+                background-color: #697268;
+                padding: 10px;
+                text-align: center;
+            }
+            nav a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 15px;
+                font-weight: bold;
+            }
+            nav a:hover {
+                text-decoration: underline;
+            }
+            .content_section {
+                display: none;
+                padding: 20px;
+            }
+            #what { /* default Home section */
+                display: block;
+            }
+            .content_section:target {
+                display: block;
+            }
+            .content_section:not(:target) {
+                display: none;
+            }
             
 
         </style>
     </head>
+    
     <body>
         <header>
             <h1>House Plants</h1>
+            <nav>
+                <a href="#what" class="nav_link">Home</a> || 
+                <a href="#where" class="nav_link">Best Locations</a> ||
+                <a href="#when" class="nav_link">Seasons</a> ||
+                <a href="#how" class="nav_link">Care Tips</a> ||
+                <a href="#why" class="nav_link">Why</a> ||
+                <a href="#about" class="nav_link">About</a> ||
+                <a href="#ai" class="nav_link">AI</a> 
+            </nav>
         </header>
         <main>      
             <!--DONE What/Home-->
-            <section>
+            <section id="what" class="content_section">
                 <h2>Home</h2>
                 <p>
                     Houseplant care is the hobby of growing and maintaining plants indoors, whether for decoration, relaxation, or the challenge of 
@@ -107,7 +146,7 @@
             </section>
 
             <!--DONE About/Who-->
-            <section>
+            <section id="about" class="content_section">
                 <h2>Who We Are</h2> 
                 <p>
                     Welcome to my little corner of the plant world! My love for houseplants started as a simple hobby and quickly grew into a passion. 
@@ -128,18 +167,18 @@
                 </figure>
                 <figure>
                     <img src="./images/dumb_cane.jpeg" alt="dumb cane">
-                    <figcaption><em><strong>Dirk</strong></Dirk> the Dumb Cane</em></figcaption>
+                    <figcaption><em><strong>Dirk</strong> the Dumb Cane</em></figcaption>
                 </figure>         
             </section>
 
             <!--DONE When/Seasons-->
-            <section>
+            <section id="when" class="content_section">
                 <h2>Seasons of Plant Care</h2>
                 <table>
                     <tr>
-                        <td class="table_heading">Spring/Summer</td>
-                        <td class="table_heading">Fall</td>
-                        <td class="table_heading">Winter</td>
+                        <td>Spring/Summer</td>
+                        <td>Fall</td>
+                        <td>Winter</td>
                     </tr>
                     <tr>
                         <td>
@@ -155,7 +194,7 @@
                                 <li>Reduced watering</li>
                                 <li>Adjust to lower/less light</li>
                                 <li>Pause the fertilizer</li>
-                                <li>Maintain/increase indor humidity</li>
+                                <li>Maintain/increase indoor humidity</li>
                             </ul>
                         </td>
                         <td>
@@ -176,7 +215,7 @@
                 <h3>Year-Round Maintenance/Tips</h3>
                 <ul>
                     <li>Inspect leaves and soil for pests and diseases</li>
-                    <li>Reasearch your plants- learn how much light they need or how often they should be watered</li>
+                    <li>Research your plants—learn how much light they need or how often they should be watered</li>
                     <li>Dust plant leaves regularly to ensure they can absorb light properly</li>
                     <li>Rotate pots every few weeks to promote even growth all around</li>
                 </ul>
@@ -184,7 +223,7 @@
             </section>
 
             <!--DONE Where/Best locations-->
-            <section>
+            <section id="where" class="content_section">
                 <h2>Best Locations for Houseplants</h2>
                 <p>Some plants thrive in bright, direct light, while others prefer shady corners. Finding the right spot is essential for growth.</p>
                 <table class="where_table">
@@ -218,7 +257,7 @@
             </section>
 
             <!--DONE How-->
-            <section>
+            <section id="how" class="content_section">
                 <h2>How to Care for Houseplants</h2>
                 <p>
                     Taking care of houseplants involves more than just watering. Each plant has specific needs related to soil, humidity, and light. 
@@ -245,7 +284,7 @@
             </section>
         
             <!--DONE why-->
-            <section>
+            <section id="why" class="content_section">
                 <h2>Why House Plants?</h2>
                 <p>
                     Houseplants are a fantastic addition to any home or workspace, offering both aesthetic and practical benefits. 
@@ -277,8 +316,23 @@
             </section>
 
             <!--AI Prompts (must clarify if didn't use any)-->
-            <section>
-                <p>I mostly used AI to produce the filler content of my website. </p>
+            <section id="ai" class="content_section">
+                <h2>AI Prompts</h2>
+                <p>I used AI to assist in generating filler content for my website. I did not use AI to produce any images.</p>
+                <h3>Prompts:</h3>
+                <ul>
+                    <li>Write a short introduction explaining the basics of houseplant care in simple terms</li>
+                    <li>Describe how houseplant care changes with the seasons, including watering and sunlight needs</li>
+                    <li>Write a friendly 'About' section for a beginner-friendly houseplant care guide</li>
+                    <li>List the best indoor locations for different types of houseplants </li>
+                    <li>Provide essential tips for year-round houseplant maintenance in a concise format</li>
+                    <li>Find a solution using css and/or JS that hides all sections except the one you have clicked</li>
+                    <li>In one sentence, what are your thoughts on houseplants as a hobby? An example is "To forget how to dig the earth and to tend the soil is to forget ourselves" by Mahatma Gandhi</li>                  
+                </ul>
+                <figure>
+                    <img src="./images/robot_plant.png" alt="robot watering a plant">
+                    <figcaption><em><q>Houseplants cultivate patience, mindfulness, and a deeper connection to nature.</q> - ChatGPT</em></figcaption>
+                </figure>
             </section>
         </main>
         <footer>
@@ -287,5 +341,28 @@
                 <a href="https://www.freecodecamp.org/certification/Nina_Matsukura_Bernardino/responsive-web-design"><em>Certified in Responsive Web Design</em></a>
             </p>
         </footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const sections = document.querySelectorAll(".content_section");
+                const navLinks = document.querySelectorAll(".nav_link");
+    
+                function showSection(id) {
+                    sections.forEach((section) => {
+                        section.style.display = section.id === id ? "block" : "none";
+                    });
+                }
+    
+                navLinks.forEach((link) => {
+                    link.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        const sectionId = this.getAttribute("href").substring(1);
+                        showSection(sectionId);
+                    });
+                });
+    
+                // Show the first section by default
+                showSection("what");
+            });
+        </script>
     </body>
 </html>
