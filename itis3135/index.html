@@ -15,7 +15,7 @@
             background-color:lightsteelblue;
         }
         h1 {
-				border: 2px solid dimgrey;
+			border: 2px solid dimgrey;
 		}
         
         a{
@@ -28,36 +28,15 @@
 </head>
 <body>
     <header>
-        <h1>Nina Matsukura Bernardino's Neat Monkey || ITIS3135 || Course Home</h1>
-        <nav>
-            <a href="./">Home  ||  </a>
-            <a href="introduction.html">Introduction  ||  </a>
-            <a href="contract.html">Contract  ||  </a>
-            <a href="neat_monkey/index.html">Whimsical Company  ||  </a>
-            <a href="website_evaluations.html">Website Evaluations</a>
-        </nav>
-        <nav> <!--2nd nav in header for 'different feel' pages (crappy,project,design firm)-->
-            <a href="stuff/crappy.htm">Crappy Webpage</a> || 
-            <a href="hobby/index.html">Hobby</a>
-        </nav>
+        <div data-include="components/header.html"></div>
     </header>
     <main>
         <h2>Home</h2>
         <p>Welcome to my ITIS 3135 course home page!</p>
     </main>
     <footer>
-        <nav>
-            <a href="https://webpages.charlotte.edu/nmatsuku/">CLT Webpage  ||  </a>
-            <a href="https://github.com/Nbernardino05/Nbernardino05.GitHub.io">GitHub  ||  </a>
-            <a href="https://nbernardino05.github.io/">GitHub.io 3135 page  ||  </a>
-            <a href="https://www.freecodecamp.org/Nina_Matsukura_Bernardino">freeCodeCamp  ||  </a>
-            <a href="https://www.codecademy.com/profiles/Nina_Matsukura_Bernardino">Codeacademy  ||  </a>
-            <a href="http://www.linkedin.com/in/nina-matsukura-bernardino-10b7692b1">LinkedIn</a>
-        </nav>
-        <p class="disclaimer">
-            <a href="nmbenterprises.com/index.html">Designed by NMB Enterprises © 2025  ||  </a>
-            <a href="https://www.freecodecamp.org/certification/Nina_Matsukura_Bernardino/responsive-web-design"><em>Certified in Responsive Web Design</em></a>
-        </p>
+        <div data-include="components/footer.html"></div>
     </footer>
+    <script src="scripts/HTMLInclude.js"></script>
 </body>
 </html>
