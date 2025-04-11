@@ -1,18 +1,21 @@
-/*
-p{
-    text-align: left;
-}
-*/
 body{
     text-align: center;
     font-family: monospace;
     font-size: large;  
     background-color:lightsteelblue;
-    padding: 0 30px;
+    padding: 0;
+    margin:0;
+}
+
+main, .maincontainer{
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 h1 {
     border: 2px solid dimgrey;
 }
+
 
 a{
     color:beige;
@@ -29,7 +32,8 @@ a{
     color:beige;
 }
 img{
-    width:540px; 
+    width:100%;
+    max-width:540px; 
     height: auto;
 }
 figcaption{
@@ -40,4 +44,33 @@ ul{
 }
 li{
     padding-bottom: 5px;   
+}
+/* mobile */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: small;
+        padding: 0 10px;
+    }
+    nav {
+        font-size: 0.9em;
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    body {
+        font-size: medium;
+        padding: 0 20px;
+    }
+}
+
+/* laptop */
+@media screen and (min-width: 981px) and (max-width: 1400px) {
+    body {
+        font-size: large;
+        padding: 0 30px;
+    }
 }
