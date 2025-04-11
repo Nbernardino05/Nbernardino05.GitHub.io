@@ -1,8 +1,43 @@
+/*
+p{
+    text-align: left;
+}
+*/
 body{
-    font-size: 1.2em;
-    color:blue;
-    background-color:beige;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    text-align: center;
+    font-family: monospace;
+    font-size: large;  
+    background-color:lightsteelblue;
+    padding: 0 30px;
+}
+h1 {
+    border: 2px solid dimgrey;
+}
+
+a{
+    color:beige;
+}
+nav{
+    color: beige;
+}
+
+.disclaimer {
+    font-weight: 500;
+    font-size: smaller;
+}
+a{
+    color:beige;
+}
+img{
+    width:540px; 
+    height: auto;
+}
+figcaption{
+    font-style: italic;
+}
+ul{
+    text-align: left;
+}
+li{
+    padding-bottom: 5px;   
 }
