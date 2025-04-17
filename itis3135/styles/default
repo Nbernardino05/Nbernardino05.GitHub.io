@@ -2,7 +2,7 @@ body{
     text-align: center;
     font-family: monospace;
     font-size: large;  
-    background-color:rgb(149, 181, 208);
+    background-color:lightsteelblue;
     padding: 0;
     margin:0;
 }
@@ -16,10 +16,10 @@ h1 {
     border: 2px solid dimgrey;
 }
 
+
 a{
     color:beige;
 }
-
 nav{
     color: beige;
 }
@@ -42,11 +42,6 @@ figcaption{
 ul, ol{
     text-align: left;
 }
-.center_list{
-    display: flex;
-    justify-content: center;
-}
-
 li{
     padding-bottom: 5px;   
 }
@@ -58,18 +53,7 @@ table{
     border: 3px solid beige;    
 }
 th, td{
-    border: 3px solid darkgray;
-    padding: 5px;
-}
-tbody tr:first-child{
-    background-color: rgb(137, 135, 135);
-}
-tbody tr:nth-child(odd):not(:first-child) {
-    background-color: rgb(211, 211, 211);
-}
-
-tbody tr:nth-child(even):not(:first-child) {
-    background-color: #e0e0e0;
+    border: 3px solid beige;
 }
 /* mobile */
 @media screen and (max-width: 600px) {
