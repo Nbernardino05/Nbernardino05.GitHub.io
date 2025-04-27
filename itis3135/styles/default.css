@@ -103,3 +103,11 @@ tbody tr:nth-child(even):not(:first-child) {
         padding: 0 30px;
     }
 }
+
+/*project overview*/
+.design_list{
+    margin-top:5px;
+}
+.div_page_design_section{
+    margin:5px;
+}
