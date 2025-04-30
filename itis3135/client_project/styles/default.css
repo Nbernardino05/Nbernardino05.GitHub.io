@@ -1,0 +1,126 @@
+/*
+Main background color: #fbf8e1 (greenish cream)
+Main text color: #343225 (dark brown)
+
+
+*/
+
+body{
+    background-color: #fbf8e1;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    color: #343225;
+    margin:0
+}
+header{
+    width:100%;
+    background-color: #CCD5AE;
+    text-align: center;
+}
+main{
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+footer{
+    background-color: #CCD5AE;
+    bottom:0;
+    width:100%;
+    padding:5px 0;
+    position: fixed;
+    text-align: center;;
+}
+
+h1{
+    margin:0;
+    padding-top: 10px;
+}
+h2{
+    text-align: center;
+}
+
+
+P{
+    text-align: left;
+}
+
+.btn_container{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    background-color: #b7b7a4;
+    text-decoration: none;
+    color: #343225;
+}
+.btn:hover{
+    background-color: #343225;
+    color: #fbf8e1;
+}
+
+nav{
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+nav a{
+    color: #343225;
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover{
+    background-color: #343225;
+    color: #fbf8e1;
+}
+
+/* FAQ ACCORDION */
+.accordion {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  .faq_item {
+    margin-bottom: 2rem; /* More spacing between items */
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    background-color: #fdfdf3;
+    padding: 1rem;
+  }
+  
+  .faq_question {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 1.1rem;
+    background-color: transparent;
+    color: #343225;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .faq_question:hover {
+    color: #6c584c;
+  }
+  
+  
+  .faq_answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    padding: 0;
+  }
+  
+  .faq_answer p {
+    margin: 1rem 0 0;
+    padding-top: 0.5rem;
+    color: #343225;
+  }
