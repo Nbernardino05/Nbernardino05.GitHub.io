@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us || Green Neighbor Project</title>
+    <link href="styles/default.css" rel="stylesheet">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>  <!--Accumulus--> 
+</head>
+<body>
+    <header>
+        <h1>Green Neighbor Project</h1>
+        <!--Nav Bar-->
+        <nav>
+            <a href="index.html">Home</a>  || 
+            <a href="request_service.html">Service Request</a>  || 
+            <a href="volunteers.html">Get Involved</a>  || 
+            <a href="faq.html">FAQ</a>
+            <a href="about.html">About Us</a>
+        </nav>
+    </header>
+    <main>
+        <h2>About Us</h2>
+        <!--intro paragraph-->
+        <div>
+            <p>The Green Neighbor Project is a community-driven, volunteer-based initiative that provides free lawn care services to the elderly, disabled, or those in need of assistance in Wilmington, NC.</p>
+            <p>Our mission is to provide assistance to those who may not be able to maintain their lawns due to physical limitations or other challenges. We believe that everyone deserves a well-kept yard, and we are here to help make that happen.</p>
+            <p>Thank you for visiting the Green Neighbor Project. We look forward to working with you to make our community a better place!</p>
+        </div>
+        
+        <!--photo carousel-->
+        <h3>Some of our favorite work:</h3>
+        <div class="slideshow_container">
+            <img class="slide" src="images/yard1.png" alt="yard 1"> <!--600x400-->
+            <img class="slide" src="images/yard2.png" alt="yard 2"> <!--405 × 540-->
+            <img class="slide" src="images/yard3.png" alt="yard 3"> <!--640 × 480-->
+            <img class="slide" src="images/yard4.png" alt="yard 4"> <!--480 × 640-->
+
+            <button class="prev" onclick="changeSlide(-1)">❮</button>
+            <button class="next" onclick="changeSlide(1)">❯</button>
+        </div>
+    </main>
+    <footer>
+        <p>Green Neighbor Project © 2025</p>
+    </footer>
+    <script src="scripts/slideshow.js"></script>
+</body>
+</html>

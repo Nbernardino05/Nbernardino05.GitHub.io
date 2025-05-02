@@ -49,6 +49,9 @@ h1{
 h2{
     text-align: center;
 }
+h3{
+    text-align: center;
+}
 
 
 P{
@@ -186,5 +189,41 @@ form select {
 }
 
 
+/* Slideshow */
+  .slideshow_container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
+  
   
   
