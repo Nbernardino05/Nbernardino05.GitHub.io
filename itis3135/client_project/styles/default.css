@@ -39,7 +39,6 @@ footer{
 }
 footer p{
     text-align: center;
-
 }
 
 h1{
@@ -56,6 +55,12 @@ h3{
 
 P{
     text-align: left;
+}
+
+figure{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
 }
 
 .btn_container{
