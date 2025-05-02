@@ -1,6 +1,10 @@
 /*
 Main background color: #fbf8e1 (greenish cream)
 Main text color: #343225 (dark brown)
+Header and footer color: #CCD5AE (light green)
+Main button color: #b7b7a4 (light gray)
+Main button hover color: #343225 (dark brown)
+
 
 
 */
@@ -10,7 +14,10 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2em;
     color: #343225;
-    margin:0
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 header{
     width:100%;
@@ -22,13 +29,17 @@ main{
     margin: 0 auto;
     max-width: 1000px;
 }
+
 footer{
     background-color: #CCD5AE;
-    bottom:0;
-    width:100%;
-    padding:5px 0;
-    position: fixed;
-    text-align: center;;
+    text-align: center;
+    padding: 10px 0;
+    display: block;
+    margin-top: auto;
+}
+footer p{
+    text-align: center;
+
 }
 
 h1{
@@ -86,7 +97,7 @@ nav a:hover{
     padding: 1rem;
   }
   
-  .faq_item {
+.faq_item {
     margin-bottom: 2rem; /* More spacing between items */
     border: 1px solid #dcdcdc;
     border-radius: 6px;
@@ -94,7 +105,7 @@ nav a:hover{
     padding: 1rem;
   }
   
-  .faq_question {
+.faq_question {
     display: block;
     width: 100%;
     text-align: left;
@@ -105,22 +116,75 @@ nav a:hover{
     cursor: pointer;
     font-weight: bold;
     transition: color 0.3s ease;
-  }
+}
   
-  .faq_question:hover {
+.faq_question:hover {
     color: #6c584c;
-  }
+}
   
   
-  .faq_answer {
+.faq_answer {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-out;
     padding: 0;
-  }
+}
   
-  .faq_answer p {
+.faq_answer p {
     margin: 1rem 0 0;
     padding-top: 0.5rem;
     color: #343225;
-  }
+}
+
+/* Request Service/Volunteer Form*/
+form {
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0);
+    background-color: #fdfdf3;
+}
+
+form label {
+    font-weight:400;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: .4rem;
+}
+
+
+.submit_btn {
+    display:inline-block;
+    padding:.5rem 1rem;
+    border:none;
+    color:#343225;
+    background-color: #b7b7a4;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    margin: .25rem;
+
+}
+  
+.submit_btn:hover{
+    background-color: #343225;
+    color: #fbf8e1;
+}
+
+.hidden_message {
+    display: none; /* Initially hidden */
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+  
+  

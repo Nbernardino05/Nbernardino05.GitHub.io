@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved || Green Neighbor Project</title>
+    <link href="styles/default.css" rel="stylesheet">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>  <!--Accumulus--> 
+</head>
+<body>
+    <header>
+        <h1>Green Neighbor Project</h1>
+        <!--Nav Bar-->
+        <nav>
+            <a href="index.html">Home</a>  ||
+            <a href="request_service.html">Service Request</a>  ||
+            <a href="volunteers.html">Get Involved</a>  ||
+            <a href="faq.html">FAQ</a>  ||
+            <a href="about.html">About Us</a>
+        </nav>        
+    </header>
+    <main>
+        <h2>Get Involved</h2>
+        <p> We are always looking for volunteers to help us with our mission. If you are interested in volunteering with us, please fill out the form below and we will get back to you as soon as possible.</p>
+         <!--Sign-up form-->
+        <form class ="volunteer_form">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required><br>
+            
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+
+            <label for="availability">Availability:</label>
+            <select id="availability" name="availability" required>
+                <option value="" disabled selected>Select your availability</option>
+                <option value="weekdays">Weekdays</option>
+                <option value="weekends">Weekends</option>
+                <option value="evenings">Both</option>
+            </select><br>
+
+            <label for="additional_info">Additional Information (optional):</label><br>
+            <textarea id="additional_info" name="additional_info" rows="5"></textarea><br><br>
+
+            <button type="submit" class="submit_btn">Submit Request</button>
+        </form>
+        <div class="hidden_message">
+            <p>Thank you for your interest, we will get back to you ASAP! The work of helping hands would not be possible without our wonderful mowing and growing volunteers, we can't wait for you to join the team!</p>
+        </div>
+
+    </main>
+    <footer>
+        <p>Green Neighbor Project © 2025</p>
+
+    </footer>
+    <script src="scripts/form_submission.js"></script>
+</body>
+</html>
