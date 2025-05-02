@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Service || Green Neighbor Project</title>
+    <link href="styles/default.css" rel="stylesheet">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>  <!--Accumulus--> 
+</head>
+<body>
+    <header>
+        <h1>Green Neighbor Project</h1>
+        <!--Nav Bar-->
+        <nav>
+            <a href="index.html">Home</a>  ||
+            <a href="request_service.html">Service Request</a>  ||
+            <a href="volunteers.html">Get Involved</a>  ||
+            <a href="faq.html">FAQ</a>  ||
+            <a href="about.html">About Us</a>
+        </nav>        
+    </header>
+    <main>
+        <h2>Request Service</h2>
+        <div >
+            <p>
+                Everyone deserves to feel proud of their home, and that starts right in the yard. 
+                Green Neighbor Project connects neighbors in need with local volunteers who are ready to lend a hand with basic lawn care. 
+                Whether you're a senior, living with a disability, or facing temporary challenges, we're here to help keep your outdoor space safe, tidy, and inviting — at no cost to you.
+            </p>
+            <p>
+                To request lawn care services, please fill out the form below. 
+                A volunteer will then reach out to you to discuss your needs and schedule a time for service.
+            </p>
+        </div>
+        <!--Sign-up form-->
+        <form>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required><br>
+            
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+
+            <label for="service">Type of Service Needed:</label>    
+            <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="mowing">Mowing</option>
+                <option value="weeding">Weeding</option>
+                <option value="leaf_raking">Leaf Raking</option>
+                <option value="trimming">Trimming</option>
+                <option value="general_clean_up">General Clean-Up</option>
+            </select><br>
+
+            <label for="additional_info">Additional Information (optional):</label><br>
+            <textarea id="additional_info" name="additional_info" rows="5"></textarea><br><br>
+
+            <button type="submit" class="submit_btn">Submit Request</button>
+            
+        </form>
+        <div class="hidden_message">
+            <p>Successful submission! We will reach out to you as soon as possible.</p>
+        </div>
+        
+
+    </main>
+    <footer>
+        <p>Green Neighbor Project © 2025</p>
+
+    </footer>
+    <script src="scripts/form_submission.js"></script>
+</body>
+</html>
