@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nina Matsukura Bernardino's Neat Monkey || ITIS3135 || BYO Intro Page</title>
+    <link href="styles/default.css" rel="stylesheet">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>  <!--Accumulus--> 
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>BYO Intro</h2>
+        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+
+        <form>
+            <label for="name">Name: </label>
+            <input type="text" id="name" value="Nina Matsukura Bernardino" required><br>
+
+            <label for="mascot">Mascot: </label>
+            <input type="text" id="mascot" value="Neat Monkey" required><br>
+
+            <!--image-->
+            <label for="image">Image: </label>
+            <input type="file" id="image" accept=".jpg, .jpeg, .png" required><br>
+
+            <label for="image_caption">Image Caption: </label>
+            <input type="text" id="image_caption" value="My annual crayon box Halloween costume" required><br>
+            
+            <label for="personal_background">Personal Background: </label>
+            <input type="text" id="personal_background" value="I'm originally from Brasil but I mostly grew up in Charlotte and I chose UNCC for its computer science program." required><br>
+
+            <label for="professional_background">Professional Background: </label>
+            <input type="text" id="professional_background" value="In high school, I worked as a barista at a small coffee shop and bussed tables at a local restaurant." required><br>
+
+            <label for="academic_background">Academic Background: </label>
+            <input type="text" id="academic_background" value="I am pursuing a BS in computer science and my concentration is web/mobile development and software engineering." required><br>
+
+            <label for="web_background">Background in this Subject: </label>
+            <input type="text" id="web_background" value="I have absolutely no experience in web design or development but I am excited to learn! I am proficient in python, java, and C." required><br>
+
+            <label for="comp_platform">Primary Computer Platform: </label>
+            <input type="text" id="comp_platform" value="Mac OS" required><br>
+
+            <!--js thing COURSES Courses I'm Taking, & Why-->
+            <div id="coursesSection">
+                <label>Courses Currently Taking:</label>
+                <button type="button" id="add_course">Add Course</button>
+                <div id="course_fields"></div>
+              </div>
+
+            <label for="funny_thing">Funny thing? </label>
+            <input type="text" id="funny_thing"><br>
+
+            <label for="extra_info">Anything else? </label>
+            <input type="text" id="extra_info"><br>
+
+            <div id="button_row">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.js"></script>
+    <script src="scripts/survey.js"></script>
+</body>
+</html>

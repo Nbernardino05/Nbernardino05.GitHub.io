@@ -5,6 +5,9 @@ body{
     background-color:rgb(149, 181, 208);
     padding: 0;
     margin:0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 main, .maincontainer{
@@ -48,6 +51,11 @@ ul, ol{
 .center_list{
     display: flex;
     justify-content: center;
+}
+footer{
+    padding: 10px 0;
+    display: block;
+    margin-top: auto;
 }
 
 li{
@@ -115,3 +123,75 @@ tbody tr:nth-child(even):not(:first-child) {
 .div_page_design_section{
     margin:5px;
 }
+
+/* intro format */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    display: block;
+    color: #1a1a1a;
+}
+
+form input[type="text"],
+form input[type="file"],
+.course-entry input {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+form input[type="submit"],
+form input[type="reset"],
+.course-entry button,
+#add_course,
+#resetBtn {
+    padding: 0.5rem 1rem;
+    background-color: #9da19f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover,
+.course-entry button:hover,
+#add_course:hover,
+#resetBtn:hover {
+    background-color: #9da19f;
+}
+
+.course-entry {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#output {
+    padding-top: 1rem;
+}
+
+#output img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+#output p {
+    margin: 0.5rem 0;
+}
+
+form #button_row {
+    display: flex;
+    gap: 0.75rem;
+}
+
+
