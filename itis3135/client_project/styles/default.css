@@ -71,8 +71,8 @@ figure img{
     text-align: center;
     margin: 0 auto;
     display: block;
-    padding-top: 75px;
-     
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 
@@ -209,13 +209,13 @@ form select {
 }
 
 
-
 /* Slideshow */
   .slideshow_container {
     position: relative;
     max-width: 600px;
     margin: auto;
     overflow: hidden;
+    margin-bottom: 30px;
   }
   
   .slide {
