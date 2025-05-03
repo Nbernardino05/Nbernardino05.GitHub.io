@@ -59,9 +59,22 @@ P{
 
 figure{
     text-align: center;
-    margin: 0 auto;
-    padding-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
+figure img{
+    width: 100%;
+}
+#earth_figure{
+    width: 300px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    padding-top: 75px;
+     
+}
+
 
 .btn_container{
     display: flex;
@@ -97,6 +110,8 @@ nav a:hover{
     background-color: #343225;
     color: #fbf8e1;
 }
+
+
 
 /* FAQ ACCORDION */
 .accordion {
@@ -188,10 +203,11 @@ form select {
 }
 
 .hidden_message {
-    display: none; /* Initially hidden */
+    display: none; /* initially hidden */
     text-align: center;
     margin-top: 2rem;
 }
+
 
 
 /* Slideshow */
