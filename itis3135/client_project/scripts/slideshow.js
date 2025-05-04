@@ -7,6 +7,7 @@ function showSlide(index) {
   });
 }
 
+//move to next slide depending on the direction selection
 function changeSlide(direction) {
   currentSlide += direction;
   if (currentSlide < 0) {
