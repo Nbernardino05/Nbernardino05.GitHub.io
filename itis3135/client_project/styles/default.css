@@ -4,9 +4,6 @@ Main text color: #343225 (dark brown)
 Header and footer color: #CCD5AE (light green)
 Main button color: #b7b7a4 (light gray)
 Main button hover color: #343225 (dark brown)
-
-
-
 */
 
 body{
@@ -52,7 +49,6 @@ h3{
     text-align: center;
 }
 
-
 P{
     text-align: left;
 }
@@ -75,7 +71,7 @@ figure img{
     padding-bottom: 20px;
 }
 
-
+/* buttons */
 .btn_container{
     display: flex;
     justify-content: center;
@@ -94,6 +90,7 @@ figure img{
     color: #fbf8e1;
 }
 
+/* nav bar */
 nav{
     padding-bottom: 10px;
     padding-top: 20px;
@@ -112,14 +109,12 @@ nav a:hover{
 }
 
 
-
-/* FAQ ACCORDION */
+/* FAQ Accordion */
 .accordion {
     max-width: 800px;
     margin: 2rem auto;
     padding: 1rem;
   }
-  
 .faq_item {
     margin-bottom: 2rem; /* More spacing between items */
     border: 1px solid #dcdcdc;
@@ -127,7 +122,6 @@ nav a:hover{
     background-color: #fdfdf3;
     padding: 1rem;
   }
-  
 .faq_question {
     display: block;
     width: 100%;
@@ -139,25 +133,22 @@ nav a:hover{
     cursor: pointer;
     font-weight: bold;
     transition: color 0.3s ease;
-}
-  
+}  
 .faq_question:hover {
     color: #6c584c;
 }
-  
-  
 .faq_answer {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-out;
     padding: 0;
 }
-  
 .faq_answer p {
     margin: 1rem 0 0;
     padding-top: 0.5rem;
     color: #343225;
 }
+
 
 /* Request Service/Volunteer Form*/
 form {
@@ -166,11 +157,9 @@ form {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0);
     background-color: #fdfdf3;
 }
-
 form label {
     font-weight:400;
 }
-
 form input,
 form textarea,
 form select {
@@ -183,8 +172,6 @@ form select {
     display: block;
     margin-bottom: .4rem;
 }
-
-
 .submit_btn {
     display:inline-block;
     padding:.5rem 1rem;
@@ -195,13 +182,11 @@ form select {
     font-size: 1em;
     margin: .25rem;
 
-}
-  
+} 
 .submit_btn:hover{
     background-color: #343225;
     color: #fbf8e1;
 }
-
 .hidden_message {
     display: none; /* initially hidden */
     text-align: center;
@@ -210,22 +195,20 @@ form select {
 
 
 /* Slideshow */
-  .slideshow_container {
+.slideshow_container {
     position: relative;
     max-width: 600px;
     margin: auto;
     overflow: hidden;
     margin-bottom: 30px;
-  }
-  
-  .slide {
+} 
+.slide {
     display: none;
     width: 100%;
     height: auto;
     border-radius: 10px;
-  }
-  
-  button.prev, button.next {
+}
+button.prev, button.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -236,15 +219,14 @@ form select {
     padding: 8px;
     cursor: pointer;
     border-radius: 5px;
-  }
-  
-  button.prev {
+}
+button.prev {
     left: 10px;
-  }
-  
-  button.next {
+}
+
+button.next {
     right: 10px;
-  }
+}
   
   
   

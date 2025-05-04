@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
   
     forms.forEach((form) => {
       form.addEventListener("submit", (event) => {
-        event.preventDefault(); // prevent default form submission
+        event.preventDefault(); //prevent default form submission
   
-        // hide the form
+        //hide the form
         form.style.display = "none";
   
-        // get the message that comes right after the form
+        //get the message that comes right after the form
         const submissionMessage = form.nextElementSibling;
   
         if (submissionMessage && submissionMessage.classList.contains("hidden_message")) {

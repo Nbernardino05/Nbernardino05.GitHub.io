@@ -17,5 +17,5 @@ function changeSlide(direction) {
   showSlide(currentSlide);
 }
 
-// Show the first slide initially
+//start on the first slide 
 showSlide(currentSlide);

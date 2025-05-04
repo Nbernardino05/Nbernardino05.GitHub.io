@@ -5,7 +5,7 @@ faqQuestions.forEach((button) => {
         const answer = button.nextElementSibling;
         const isExpanded = answer.style.maxHeight && answer.style.maxHeight !== "0px";
 
-        // Collapse all other answers (optional accordion behavior)
+        // collapse all other answers (optional accordion behavior)
         faqQuestions.forEach((btn) => {
             const ans = btn.nextElementSibling;
             if (ans !== answer) {
