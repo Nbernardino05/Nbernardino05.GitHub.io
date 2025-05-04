@@ -70,6 +70,19 @@ figure img{
     padding-top: 10px;
     padding-bottom: 20px;
 }
+@keyframes spin {   /* keyframes for spinning animation (for earth image) */
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#earth_figure img {
+    animation: spin 10s linear infinite; /* spins in 10 seconds and repeats infinitely */
+    display: block;
+    margin: 0 auto;
+}
 
 /* buttons */
 .btn_container{
