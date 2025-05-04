@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!--itis3135 contract page-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nina Matsukura Bernardino's Neat Monkey || ITIS3135 || Slideshow</title>
+        <link href="styles/default.css" rel="stylesheet">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>  <!--Accumulus--> 
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>        
+        </header>
+        <main>
+            <h1>Nina Matsukura Bernardino's Neat Monkey || ITIS3135 || Slideshow</h1>
+        
+            <h2>Slideshow</h2>
+            <div class="slideshow-container">
+                <!-- Slides -->
+                <div class="slide-wrapper">
+                    <div class="mySlides"><img src="images/nutella.jpeg" style="width:100%" alt="N - for Nutella"></div>
+                    <div class="mySlides"><img src="images/icecream.jpeg" style="width:100%" alt="I - for Icecream"></div>
+                    <div class="mySlides"><img src="images/notebook.jpeg" style="width:100%" alt="N - for Notebook"></div>
+                    <div class="mySlides"><img src="images/airplane.jpeg" style="width:100%" alt="A - for Airplane"></div>
+                    <div class="mySlides"><img src="images/baby.jpeg" style="width:100%" alt="B - for Baby"></div>
+                    <div class="mySlides"><img src="images/egg.jpeg" style="width:100%" alt="E - for Egg"></div>
+                    <div class="mySlides"><img src="images/redbull.jpeg" style="width:100%" alt="R - for Redbull"></div>
+                    <div class="mySlides"><img src="images/nose.jpeg" style="width:100%" alt="N - for Nose"></div>
+                    <div class="mySlides"><img src="images/almonds.jpeg" style="width:100%" alt="A - for Almonds"></div>
+                    <div class="mySlides"><img src="images/redbull_truck.jpeg" style="width:100%" alt="R - for Redbull Truck"></div>
+                    <div class="mySlides"><img src="images/dog.jpeg" style="width:100%" alt="D - for Dog"></div>
+                    <div class="mySlides"><img src="images/iron.jpeg" style="width:100%" alt="I - for Iron"></div>
+                    <div class="mySlides"><img src="images/necklace.jpg" style="width:100%" alt="N - for Necklace"></div>
+                    <div class="mySlides"><img src="images/oven.jpeg" style="width:100%" alt="O - for Oven"></div>
+                    
+                    <!-- Navigation -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                
+            
+                <!-- Caption -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            
+                <!-- Thumbnails -->
+                <div class="row">
+                    <div class="column"><img class="cursor demo" src="images/nutellaThumb.jpeg" onclick="currentSlide(1)" alt="N - for Nutella"></div>
+                    <div class="column"><img class="cursor demo" src="images/icecreamThumb.jpeg" onclick="currentSlide(2)" alt="I - for Icecream"></div>
+                    <div class="column"><img class="cursor demo" src="images/notebookThumb.jpeg" onclick="currentSlide(3)" alt="N - for Notebook"></div>
+                    <div class="column"><img class="cursor demo" src="images/airplaneThumb.jpeg" onclick="currentSlide(4)" alt="A - for Airplane"></div>
+                    <div class="column"><img class="cursor demo" src="images/babyThumb.jpeg" onclick="currentSlide(5)" alt="B - for Baby"></div>
+                    <div class="column"><img class="cursor demo" src="images/eggThumb.jpeg" onclick="currentSlide(6)" alt="E - for Egg"></div>
+                    <div class="column"><img class="cursor demo" src="images/redbullThumb.jpeg" onclick="currentSlide(7)" alt="R - for Redbull"></div>
+                    <div class="column"><img class="cursor demo" src="images/noseThumb.jpeg" onclick="currentSlide(8)" alt="N - for Nose"></div>
+                    <div class="column"><img class="cursor demo" src="images/almondsThumb.jpeg" onclick="currentSlide(9)" alt="A - for Almonds"></div>
+                    <div class="column"><img class="cursor demo" src="images/redbull_truckThumb.jpeg" onclick="currentSlide(10)" alt="R - for Redbull Truck"></div>
+                    <div class="column"><img class="cursor demo" src="images/dogThumb.jpeg" onclick="currentSlide(11)" alt="D - for Dog"></div>
+                    <div class="column"><img class="cursor demo" src="images/ironThumb.jpeg" onclick="currentSlide(12)" alt="I - for Iron"></div>
+                    <div class="column"><img class="cursor demo" src="images/necklaceThumb.jpg" onclick="currentSlide(13)" alt="N - for Necklace"></div>
+                    <div class="column"><img class="cursor demo" src="images/ovenThumb.jpeg" onclick="currentSlide(14)" alt="O - for Oven"></div>
+                </div>
+            </div>
+            
+        
+            <!-- Notes -->
+            <div id="notes">
+            <h4>Notes:</h4>
+            <p>This is my work and I did not copy and paste someone else's code.</p>
+            <p>These images are all my own.</p>
+            </div>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/HTMLInclude.js"></script>
+        <script src="scripts/slideshow.js"></script> 
+    </body>
+</html>

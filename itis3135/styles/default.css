@@ -211,3 +211,78 @@ form #button_row {
 }
 
 
+/* Slideshow */
+.slideshow_container {
+    max-width: 2000px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+}
+
+.mySlides img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+.slide-wrapper {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+/* Arrows */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Caption */
+.caption-container {
+    text-align: center;
+    padding: 10px 0;
+    font-style: italic;
+    font-weight: 600;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+/* Thumbnails */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 8px;
+}
+
+.column img {
+    max-width: 75px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.column img:hover {
+    border: 2px solid #999;
+}
+
